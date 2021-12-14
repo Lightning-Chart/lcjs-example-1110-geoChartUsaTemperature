@@ -79,7 +79,7 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 
 
 [ColorRGBA]: https://www.arction.com/lightningchart-js-api-documentation/v3.3.0/globals.html#colorrgba
-[ImageFill]: https://www.arction.com/lightningchart-js-api-documentation/v3.3.0/
-[ImageFitMode]: https://www.arction.com/lightningchart-js-api-documentation/v3.3.0/
+[ImageFill]: https://www.arction.com/lightningchart-js-api-documentation/v3.3.0/classes/imagefill.html
+[ImageFitMode]: https://www.arction.com/lightningchart-js-api-documentation/v3.3.0/enums/imagefitmode.html
 [LUT]: https://www.arction.com/lightningchart-js-api-documentation/v3.3.0/classes/lut.html
 
