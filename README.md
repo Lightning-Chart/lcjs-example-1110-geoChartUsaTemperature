@@ -37,6 +37,13 @@ This example also generates a random data set that is used to showcase the real-
 
 To learn more about the ground-breaking performance differences between LightningChart and traditional data visualization tools, please refer to our [performance comparison studies](https://www.arction.com/high-performance-javascript-charts/).
 
+**More map examples**:
+
+- [Data visualization over LightningChart JS Map Charts](https://www.arction.com/lightningchart-js-interactive-examples/examples/lcjs-example-1103-mapChartVizXY.html)
+- [Data visualization over Google Maps](https://blog.arction.com/easy-geospatial-data-visualization-with-lightningchart-js-and-google)
+- [LightningChart JS Map Charts with Drill-down](https://www.arction.com/lightningchart-js-interactive-examples/examples/lcjs-example-1111-covidDrillDownDashboard.html)
+- [Simple Countries Visualization](https://www.arction.com/lightningchart-js-interactive-examples/examples/lcjs-example-1101-mapChartDynamicColor.html)
+
 # About LightningChart Heatmaps Performance
 
 Since September 2021, LightningChart JS is the proven performance leader in real-time and static heatmaps visualization in the web.
@@ -78,8 +85,8 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 © Arction Ltd 2009-2020. All rights reserved.
 
 
-[ColorRGBA]: https://www.arction.com/lightningchart-js-api-documentation/v3.3.0/globals.html#colorrgba
-[ImageFill]: https://www.arction.com/lightningchart-js-api-documentation/v3.3.0/classes/imagefill.html
-[ImageFitMode]: https://www.arction.com/lightningchart-js-api-documentation/v3.3.0/enums/imagefitmode.html
-[LUT]: https://www.arction.com/lightningchart-js-api-documentation/v3.3.0/classes/lut.html
+[ColorRGBA]: https://www.arction.com/lightningchart-js-api-documentation/v3.4.0/globals.html#colorrgba
+[ImageFill]: https://www.arction.com/lightningchart-js-api-documentation/v3.4.0/classes/imagefill.html
+[ImageFitMode]: https://www.arction.com/lightningchart-js-api-documentation/v3.4.0/enums/imagefitmode.html
+[LUT]: https://www.arction.com/lightningchart-js-api-documentation/v3.4.0/classes/lut.html
 
