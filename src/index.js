@@ -18,7 +18,7 @@ const chart = lightningChart({
     warnings: false,
 })
     .ChartXY({
-        // theme: Themes.darkGold
+        theme: Themes[new URLSearchParams(window.location.search).get('theme') || 'darkGold'] || undefined,
     })
     .setTitle('Loading temperature data ...')
     .setPadding({ right: 40 })
