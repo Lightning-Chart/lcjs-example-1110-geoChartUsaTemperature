@@ -63,7 +63,7 @@ const heatmap = chart
     )
 
 // Get Temperature Data
-fetch(document.head.baseURI + 'examples/assets/1110/usa-temperature-data.json')
+fetch(new URL(document.head.baseURI).origin + new URL(document.head.baseURI).pathname + 'examples/assets/1110/usa-temperature-data.json')
     .then((r) => r.json())
     .then((temperatureData) => {
         // Add data to the Heatmap Series
@@ -141,7 +141,10 @@ fetch(document.head.baseURI + 'examples/assets/1110/usa-temperature-data.json')
 // Load picture of USA map.
 const bgImg = new Image()
 bgImg.crossOrigin = ''
-bgImg.src = document.head.baseURI + `examples/assets/1110/${theme.isDark ? 'usa.png' : 'usa-light.png'}`
+bgImg.src =
+    new URL(document.head.baseURI).origin +
+    new URL(document.head.baseURI).pathname +
+    `examples/assets/1110/${theme.isDark ? 'usa.png' : 'usa-light.png'}`
 
 // Style Chart series background as the picture.
 chart.setSeriesBackgroundFillStyle(
