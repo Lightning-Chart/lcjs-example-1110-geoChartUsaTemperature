@@ -3,8 +3,8 @@
  */
 
 // Import LightningChartJS
-const lcjs = require('@arction/lcjs')
-const xydata = require('@arction/xydata')
+const lcjs = require('@lightningchart/lcjs')
+const xydata = require('@lightningchart/xydata')
 
 // Extract required parts from LightningChartJS.
 const { lightningChart, regularColorSteps, ImageFill, ImageFitMode, PalettedFill, LUT, formatLongitudeLatitude, emptyLine, Themes } = lcjs
@@ -50,17 +50,11 @@ const heatmap = chart
     .addHeatmapGridSeries({
         columns,
         rows,
-        start: { x: -126, y: 24 },
-        end: { x: -66, y: 48.0 },
         dataOrder: 'columns',
     })
+    .setStart({ x: -126, y: 24 })
+    .setEnd({ x: -66, y: 48.0 })
     .setWireframeStyle(emptyLine)
-    // Customize cursor result table formatting.
-    .setCursorResultTableFormatter((builder, _, dataPoint) =>
-        builder
-            .addRow(formatLongitudeLatitude(dataPoint.x, dataPoint.y))
-            .addRow('Temp:', '', fahrenheitToCelsius(dataPoint.intensity).toFixed(1), '\u00B0С'),
-    )
 
 // Get Temperature Data
 fetch(new URL(document.head.baseURI).origin + new URL(document.head.baseURI).pathname + 'examples/assets/1110/usa-temperature-data.json')
