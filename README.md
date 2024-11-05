@@ -85,8 +85,8 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 © LightningChart Ltd 2009-2022. All rights reserved.
 
 
-[ColorRGBA]: https://lightningchart.com/js-charts/api-documentation/v6.0.0/functions/ColorRGBA.html
-[ImageFill]: https://lightningchart.com/js-charts/api-documentation/v6.0.0/classes/ImageFill.html
-[ImageFitMode]: https://lightningchart.com/js-charts/api-documentation/v6.0.0/enums/ImageFitMode.html
-[LUT]: https://lightningchart.com/js-charts/api-documentation/v6.0.0/classes/LUT.html
+[ColorRGBA]: https://lightningchart.com/js-charts/api-documentation/v6.1.0/functions/ColorRGBA.html
+[ImageFill]: https://lightningchart.com/js-charts/api-documentation/v6.1.0/classes/ImageFill.html
+[ImageFitMode]: https://lightningchart.com/js-charts/api-documentation/v6.1.0/enums/ImageFitMode.html
+[LUT]: https://lightningchart.com/js-charts/api-documentation/v6.1.0/classes/LUT.html
 
