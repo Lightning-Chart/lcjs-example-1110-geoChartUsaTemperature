@@ -13,19 +13,16 @@ const { createWaterDropDataGenerator } = xydata
 
 // Create a XY Chart
 const chart = lightningChart({
-    // Example data set is a bit larger than actual displayed heatmap. This is intentional, but displays a console warning.
-    // This flag is specified to omit this warning.
-    warnings: false,
-})
+            resourcesBaseUrl: new URL(document.head.baseURI).origin + new URL(document.head.baseURI).pathname + 'resources/',
+        })
     .ChartXY({
         theme: Themes[new URLSearchParams(window.location.search).get('theme') || 'darkGold'] || undefined,
     })
     .setTitle('Loading temperature data ...')
-    .setPadding({ right: 40 })
-    .setMouseInteractions(false)
+    .setUserInteractions(undefined)
 
-const axisY = chart.getDefaultAxisY().setTitle('Latitude').setMouseInteractions(false).setAnimationScroll(false)
-const axisX = chart.getDefaultAxisX().setTitle('Longitude').setMouseInteractions(false).setAnimationScroll(false)
+const axisY = chart.getDefaultAxisY().setTitle('Latitude').setAnimationScroll(false)
+const axisX = chart.getDefaultAxisX().setTitle('Longitude').setAnimationScroll(false)
 const theme = chart.getTheme()
 
 // Define value -> color look up table.
