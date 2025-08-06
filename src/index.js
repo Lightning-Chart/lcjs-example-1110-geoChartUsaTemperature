@@ -7,7 +7,7 @@ const lcjs = require('@lightningchart/lcjs')
 const xydata = require('@lightningchart/xydata')
 
 // Extract required parts from LightningChartJS.
-const { lightningChart, regularColorSteps, ImageFill, ImageFitMode, PalettedFill, LUT, formatLongitudeLatitude, emptyLine, Themes } = lcjs
+const { lightningChart, regularColorSteps, ImageFill, ImageFitMode, PalettedFill, LUT, formatLongitudeLatitude, emptyLine, LegendPosition, Themes } = lcjs
 
 const { createWaterDropDataGenerator } = xydata
 
@@ -16,6 +16,7 @@ const chart = lightningChart({
             resourcesBaseUrl: new URL(document.head.baseURI).origin + new URL(document.head.baseURI).pathname + 'resources/',
         })
     .ChartXY({
+        legend: { position: LegendPosition.BottomRight },
         theme: Themes[new URLSearchParams(window.location.search).get('theme') || 'darkGold'] || undefined,
     })
     .setTitle('Loading temperature data ...')
@@ -26,7 +27,6 @@ const axisX = chart.getDefaultAxisX().setTitle('Longitude').setAnimationScroll(f
 const theme = chart.getTheme()
 
 // Define value -> color look up table.
-let legend
 const setHeatmapPalette = (transparency) => {
     heatmap.setFillStyle(
         new PalettedFill({
@@ -37,7 +37,6 @@ const setHeatmapPalette = (transparency) => {
             }),
         }),
     )
-    legend = legend || chart.addLegendBox().add(chart)
 }
 
 // Add Heatmap Series
